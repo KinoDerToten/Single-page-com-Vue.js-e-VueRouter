@@ -3,13 +3,13 @@
       <div class="container-fluid bg-dark">
         <div class="row">
           <div class="col-4">
-            <a href="" class="display-1 text-white font-bold">Logo</a>
+            <router-link to="/" class="display-1 text-white font-bold">Logo</router-link>
           </div>
           <div class="col-3">
-            <a href="" class="display-3 text-white">Sobre</a>
+            <router-link to="/Sobre" class="display-3 text-white">Sobre</router-link>
           </div>
           <div class="col-3">
-            <a href="" class="display-3 text-white">Contato</a>
+            <router-link to="/Contato" class="display-3 text-white">Contato</router-link>
           </div>
         </div>
       </div>
