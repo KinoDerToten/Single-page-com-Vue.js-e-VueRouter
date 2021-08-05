@@ -11,5 +11,7 @@
 </script>
 
 <style scoped>
-
+  footer h1{
+    color: #c6c0a8;
+  }
 </style>

@@ -1,15 +1,15 @@
 <template>
-    <header>
-      <div class="container-fluid bg-dark">
+    <header class="bg-dark">
+      <div class="container">
         <div class="row">
-          <div class="col-4">
-            <router-link to="/" class="display-1 text-white font-bold">Logo</router-link>
+          <div class="col-6">
+            <router-link to="/"><h1>Logo</h1></router-link>
           </div>
-          <div class="col-3">
-            <router-link to="/Sobre" class="display-3 text-white">Sobre</router-link>
+          <div class="col">
+            <router-link to="/sobre"><span class="menu">Sobre</span></router-link>
           </div>
-          <div class="col-3">
-            <router-link to="/Contato" class="display-3 text-white">Contato</router-link>
+          <div class="col">
+            <router-link to="/contato"><span class="menu">Contato</span></router-link>
           </div>
         </div>
       </div>
@@ -21,11 +21,25 @@
 </script>
 
 <style scoped>
-    header a{
+  header a{
         text-decoration: none;
     }
 
-    header .font-bold{
+  header .font-bold{
         font-weight: bold;
     }
+
+  header h1 {
+    color: #FFF;
+    font-size: 90px;
+  }
+
+  .menu{
+    color: #FFF;
+    font-size: 50px;
+  }
+
+  header .container{
+    height: 120px;
+  }
 </style>
