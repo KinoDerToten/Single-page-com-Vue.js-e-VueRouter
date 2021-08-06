@@ -1,57 +1,29 @@
 <template>
-    <main>
-      <div class="container">
-        <div class="row mt-5 mb-5">
-          <div class="col-8">
-            <div class="quadrado bg-dark">
-              <div class="row p-5">
-                <div class="col-6">
-                  <input type="text" placeholder="Nome">
-                </div>
-                <div class="col-6">
-                  <input type="email" placeholder="E-mail">
-                </div>
-                <div class="col mt-5">
-                  <textarea rows="20" placeholder="Mensagem"></textarea>
-                </div>
-              </div>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form>
+            <div class="input-style">
+              <input type="text">
+              <label>Nome:</label>
             </div>
-          </div>
-          <div class="col">
-            <div class="contato">
-              <h1>Contato</h1>
-                <div class="container flex mt-5">
-                  <div class="icon">
-                    <i class="fas fa-envelope fa-3x"></i>
-                  </div>
-                  <div class="email">
-                    E-mail: <br>
-                    <a href="">email@email.com</a>
-                  </div>
-                </div>
-                <div class="container flex mt-5">
-                  <div class="icon">
-                    <i class="fas fa-phone-alt fa-3x"></i>
-                  </div>
-                  <div class="email">
-                    Telefone: <br>
-                    (00)00000-0000
-                  </div>
-                </div>
-                <div class="container flex mt-5">
-                  <div class="icon">
-                    <i class="fas fa-map-pin fa-3x"></i>
-                  </div>
-                  <div class="email">
-                    Endereço: <br>
-                    Rua Sabeselá, N° 46
-                  </div>
-                </div>
+            <div class="input-style">
+              <input type="text">
+              <label>E-mail:</label>
             </div>
-          </div>
+            <div class="textarea-style">
+              <textarea cols="60" rows=""></textarea>
+              <label>Mensagem:</label>
+            </div>
+          </form>
+        </div>
+        <div class="col">
+
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 </template>
 
 <script>
@@ -59,48 +31,63 @@
 </script>
 
 <style scoped>
-    .quadrado{
-        height: 700px;
-        opacity: 0.5;
-    }
-
-    textarea, input{
-      width: 100%;
-    }
-
-    textarea:focus, input:focus {
-      box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    } 
-
-    textarea::placeholder, input::placeholder {
-      color: #000;
-      text-align: center;
-    }
-
-    .contato{
-      height: 700px;
-      border: 7px solid #000;
-    }
-
-    h1 {
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .flex{
-      display: flex;
-    }
-
-    .email{
-      font-size: 20px;
-      margin-left: 10px;
-    }
-
-    a{
-      text-decoration: none;
-      color: #000
-    }
     
+  form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 64px;
+    background-color: rgba(0,0,0,.7);
+  }
+
+  div.input-style{
+    margin-bottom: 24px;
+    position: relative;
+  }
+
+  input{
+    -moz-appearence: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-bottom: 4px solid #8798b5;
+    background-color: transparent;
+    outline: none;
+    color: #8798b5;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    color: #8798b5;
+  }
+
+  .textarea-style textarea{
+    border: none;
+    border-bottom: 4px solid #8798b5;
+    outline: none;
+    background-color: transparent;
+    -moz-appearence: none;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #8798b5;
+  }
+
+  div.textarea-style{
+    margin-bottom: 24px;
+    position: relative;
+    margin-top: 24px;
+  }
+
+  textarea ~ label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #8798b5;
+  }
 </style>

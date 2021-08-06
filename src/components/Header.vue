@@ -2,44 +2,30 @@
     <header class="bg-dark">
       <div class="container">
         <div class="row">
-          <div class="col-6">
-            <router-link to="/"><h1>Logo</h1></router-link>
-          </div>
-          <div class="col">
-            <router-link to="/sobre"><span class="menu">Sobre</span></router-link>
-          </div>
-          <div class="col">
-            <router-link to="/contato"><span class="menu">Contato</span></router-link>
-          </div>
+          <div class="col-lg-8"><router-link to="/"><span class="logo text-white">Logo</span></router-link></div>
+          <div class="col-lg-2 pt-3"><router-link to="/Sobre"><span class="sobre text-white">Sobre</span></router-link></div>
+          <div class="col-lg-2 pt-3"><router-link to="/Contato"><span class="contato text-white">Contato</span></router-link></div>
         </div>
       </div>
     </header>
 </template>
 
 <script>
-
 </script>
 
 <style scoped>
-  header a{
-        text-decoration: none;
-    }
-
-  header .font-bold{
-        font-weight: bold;
-    }
-
-  header h1 {
-    color: #FFF;
-    font-size: 90px;
+  .logo{
+    font-weight: bold;
+    font-size: 70px;
+    cursor: pointer;
   }
 
-  .menu{
-    color: #FFF;
+  .sobre, .contato{
     font-size: 50px;
+    cursor: pointer;
   }
-
-  header .container{
-    height: 120px;
+  
+  a{
+    text-decoration: none;
   }
 </style>
