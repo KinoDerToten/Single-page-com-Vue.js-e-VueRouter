@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
         <div class="col">
           <form>
@@ -13,13 +13,30 @@
               <label>E-mail:</label>
             </div>
             <div class="textarea-style">
-              <textarea cols="60" rows=""></textarea>
+              <textarea cols="60" rows="10"></textarea>
               <label>Mensagem:</label>
             </div>
           </form>
         </div>
         <div class="col">
-
+          <h1 class="text-center">Contato</h1>
+          <div class="row p-5">
+            <div class="col-lg-2 mb-5"><i class="fas fa-envelope fa-5x"></i></div>
+            <div class="col-lg-10">
+              <h3>Email</h3>
+              <p><a href="">email@email.com</a></p>
+            </div>
+            <div class="col-lg-2 mb-5"><i class="fas fa-phone fa-5x"></i></div>
+            <div class="col-lg-10">
+              <h3>Telefone</h3>
+              <p>(00) 00000-0000</p>
+            </div>
+            <div class="col-lg-2"><i class="fas fa-map-pin fa-5x"></i></div>
+            <div class="col-lg-10">
+              <h3>Endereço</h3>
+              <p>Rua Sabeselá, N°46</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -52,10 +69,10 @@
     width: 100%;
     padding: 16px;
     border: none;
-    border-bottom: 4px solid #8798b5;
+    border-bottom: 4px solid #FFF;
     background-color: transparent;
     outline: none;
-    color: #8798b5;
+    color: #FFF;
     font-size: 1em;
     text-align: center;
   }
@@ -64,18 +81,18 @@
     position: absolute;
     top: 16px;
     left: 0;
-    color: #8798b5;
+    color: #FFF;
   }
 
   .textarea-style textarea{
     border: none;
-    border-bottom: 4px solid #8798b5;
+    border-bottom: 4px solid #FFF;
     outline: none;
     background-color: transparent;
     -moz-appearence: none;
     -webkit-appearance: none;
     appearance: none;
-    color: #8798b5;
+    color: #FFF;
   }
 
   div.textarea-style{
@@ -88,6 +105,25 @@
     position: absolute;
     top: -20px;
     left: 0;
-    color: #8798b5;
+    color: #FFF;
+  }
+
+  h3{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+
+  a:hover{
+    color: blue;
   }
 </style>
