@@ -1,12 +1,26 @@
 <template>
     <main>
-      <div class="container">
-        <div class="quadrado bg-dark"></div>
-        <div class="quadrado bg-dark"></div>
-        <div class="quadrado bg-dark"></div>
-        <div class="quadrado bg-dark"></div>
-        <div class="quadrado bg-dark"></div>
-        <div class="quadrado bg-dark"></div>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-lg-4 mb-lg-5">
+            <div class="quadrado bg-dark"></div>
+          </div>
+          <div class="col-lg-4 mb-lg-5">
+            <div class="quadrado bg-dark"></div>
+          </div>
+          <div class="col-lg-4 mb-lg-5">
+            <div class="quadrado bg-dark"></div>
+          </div>
+          <div class="col-lg-4 mb-lg-4">
+            <div class="quadrado bg-dark"></div>
+          </div>
+          <div class="col-lg-4 mb-lg-4">
+            <div class="quadrado bg-dark"></div>
+          </div>
+          <div class="col-lg-4 mb-lg-4">
+            <div class="quadrado bg-dark"></div>
+          </div>
+        </div>
       </div>
     </main>
 </template>
@@ -19,5 +33,10 @@
     .quadrado{
       height: 300px;
       width: 300px;
+    }
+
+    .col-lg-4{
+      display: flex;
+      justify-content: center;
     }
 </style>
