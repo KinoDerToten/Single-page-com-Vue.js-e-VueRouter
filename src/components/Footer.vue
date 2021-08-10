@@ -1,6 +1,6 @@
 <template>
     <footer>
-      <div class="container-flui bg-dark">
+      <div class="container-flui h-100 bg-dark">
         <h1 class="text-center text-white display-1">Footer</h1>
       </div>
     </footer>

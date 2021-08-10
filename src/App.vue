@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <router-view/>
-    <Footer/>
+    <Footer id="footer"/>
   </div>
 </template>
 
@@ -25,6 +25,14 @@ export default {
   }
 
   #app{
+    margin: 0;
+    padding: 0;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer{
+    margin-top: auto;
   }
 </style>
