@@ -3,12 +3,12 @@
       <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-6 col-lg-7 mb-5 mt-5">
+                <div class="col-12 col-lg-7 mb-5 mt-5">
                     <div class="quadrado bg-dark">
                         <img src="../../assets/foto-de-perfil.png" alt="" width="100%" height="100%">
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-12 col-lg-5">
                     <h1 id="titulo" class="text-center">Nome</h1>
                     <p id="paragrafo" class="text-center">
                         Lorem ipsum dolor sit amet,

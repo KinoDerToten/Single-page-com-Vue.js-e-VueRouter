@@ -2,22 +2,22 @@
     <main>
       <div class="container mt-4">
         <div class="row">
-          <div class="col-lg-4 mb-lg-5">
+          <div class="col-lg-4 col-sm-6 mb-5">
             <div class="quadrado bg-dark"></div>
           </div>
-          <div class="col-lg-4 mb-lg-5">
+          <div class="col-lg-4 col-sm-6 mb-5">
             <div class="quadrado bg-dark"></div>
           </div>
-          <div class="col-lg-4 mb-lg-5">
+          <div class="col-lg-4 col-sm-6 mb-5">
             <div class="quadrado bg-dark"></div>
           </div>
-          <div class="col-lg-4 mb-lg-4">
+          <div class="col-lg-4 col-sm-6 mb-4">
             <div class="quadrado bg-dark"></div>
           </div>
-          <div class="col-lg-4 mb-lg-4">
+          <div class="col-lg-4 col-sm-6 mb-4">
             <div class="quadrado bg-dark"></div>
           </div>
-          <div class="col-lg-4 mb-lg-4">
+          <div class="col-lg-4 col-sm-6 mb-4">
             <div class="quadrado bg-dark"></div>
           </div>
         </div>

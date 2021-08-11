@@ -1,8 +1,8 @@
 <template>
   <main>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col">
+    <div class="container mt-5 mb-5">
+      <div class="row border">
+        <div class="col-lg-6">
           <form>
             <div class="input-style">
               <input type="text">
@@ -13,12 +13,12 @@
               <label>E-mail:</label>
             </div>
             <div class="textarea-style">
-              <textarea cols="60" rows="10"></textarea>
+              <textarea cols="54" rows="10"></textarea>
               <label>Mensagem:</label>
             </div>
           </form>
         </div>
-        <div class="col">
+        <div class="col-lg-6 mt-5">
           <h1 class="text-center">Contato</h1>
           <div class="row p-5">
             <div class="col-lg-3 mb-5"><i class="fas fa-envelope fa-5x"></i></div>
