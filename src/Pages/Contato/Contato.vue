@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="container mt-5 mb-5">
-      <div class="row border">
+      <div class="row">
         <div class="col-lg-6">
           <form>
             <div class="input-style">
@@ -13,26 +13,26 @@
               <label>E-mail:</label>
             </div>
             <div class="textarea-style">
-              <textarea cols="54" rows="10"></textarea>
+              <textarea rows="10"></textarea>
               <label>Mensagem:</label>
             </div>
           </form>
         </div>
         <div class="col-lg-6 mt-5">
           <h1 class="text-center">Contato</h1>
-          <div class="row p-5">
-            <div class="col-lg-3 mb-5"><i class="fas fa-envelope fa-5x"></i></div>
-            <div class="col-lg-9">
+          <div class="row border p-5">
+            <div class="col-3 mb-5"><i class="fas fa-envelope fa-5x"></i></div>
+            <div class="col-9">
               <h3>Email</h3>
               <p><a href="">email@email.com</a></p>
             </div>
-            <div class="col-lg-3 mb-5"><i class="fas fa-phone fa-5x"></i></div>
-            <div class="col-lg-9">
+            <div class="col-3 mb-5"><i class="fas fa-phone fa-5x"></i></div>
+            <div class="col-9">
               <h3>Telefone</h3>
               <p>(00) 00000-0000</p>
             </div>
-            <div class="col-lg-3"><i class="fas fa-map-pin fa-5x"></i></div>
-            <div class="col-lg-9">
+            <div class="col-3"><i class="fas fa-map-pin fa-5x"></i></div>
+            <div class="col-9">
               <h3>Endereço</h3>
               <p>Rua Sabeselá, N°46</p>
             </div>
@@ -93,6 +93,7 @@
     -webkit-appearance: none;
     appearance: none;
     color: #FFF;
+    width: 100%;
   }
 
   div.textarea-style{
