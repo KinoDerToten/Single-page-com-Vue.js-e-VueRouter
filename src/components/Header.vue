@@ -2,10 +2,17 @@
     <header class="bg-dark">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-sm-5 col-5"><router-link to="/"><span class="logo text-white">Logo</span></router-link></div>
-          <div class="col-lg-2 col-sm-3 col-3 pt-3" v-if="step != 0" @click="step = 0"><router-link to="/"><span class="sobre text-white">Início</span></router-link></div>
-          <div class="col-lg-2 col-sm-3 col-3 pt-3" v-if="step != 1" @click="step = 1"><router-link to="/Sobre"><span class="sobre text-white">Sobre</span></router-link></div>
-          <div class="col-lg-2 col-sm-2 col-3 pt-3" v-if="step != 3" @click="step = 3"><router-link to="/Contato"><span class="contato text-white">Contato</span></router-link></div>
+          <div class="col-lg-6 col-sm-6 col-9"><router-link to="/"><span class="logo text-white">Logo</span></router-link></div>
+          <div class="col-lg-6 col-sm-6 col-3">
+            <div @click="menuMobile" class="col-6 mt-3 pt-3" id="menu-mobile">
+              <button><i class="fas fa-bars fa-3x"></i></button>
+            </div>
+            <div id="menu" class="row">
+              <div class="col-sm-6 col-6 pt-3" v-if="step != 0" @click="step = 0"><router-link to="/"><span class="sobre text-white">Início</span></router-link></div>
+              <div class="col-sm-6 col-6 pt-3" v-if="step != 1" @click="step = 1"><router-link to="/Sobre"><span class="sobre text-white">Sobre</span></router-link></div>
+              <div class="col-sm-6 col-6 pt-3" v-if="step != 3" @click="step = 3"><router-link to="/Contato"><span class="contato text-white">Contato</span></router-link></div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -37,5 +44,31 @@
   
   a{
     text-decoration: none;
+  }
+
+  @media (max-width: 575px) {
+    #menu{
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100px;
+      width: 100%;
+      background-color: #212529;
+      margin: 0;
+      padding: 0
+    }
+
+    #menu.row{
+      flex-direction: column;
+    }
+
+    button{
+      border: none;
+      background: transparent;
+    }
+
+    .fa-bars{
+      color: white;
+    }
   }
 </style>

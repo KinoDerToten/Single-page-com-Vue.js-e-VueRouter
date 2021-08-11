@@ -18,9 +18,9 @@
             </div>
           </form>
         </div>
-        <div class="col-lg-6 mt-5">
+        <div class="col-lg-6 mt-5 mt-sm-5 mt-lg-0">
           <h1 class="text-center">Contato</h1>
-          <div class="row border p-5">
+          <div class="row p-sm-5">
             <div class="col-3 mb-5"><i class="fas fa-envelope fa-5x"></i></div>
             <div class="col-9">
               <h3>Email</h3>
