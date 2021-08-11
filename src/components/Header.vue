@@ -25,6 +25,15 @@
       return {
         step: 0,
       }
+    },
+    methods: {
+      menuMobile() {
+        if(document.querySelector("#menu").style.display == 'flex') {
+          document.querySelector("#menu").style.display = 'none';
+        } else {
+            document.querySelector("#menu").style.display = 'flex';
+          }
+      }
     }
 }
 
@@ -46,7 +55,19 @@
     text-decoration: none;
   }
 
+  #menu{
+    display: flex;
+  }
+
+  #menu-mobile{
+    display: none;
+  }
+
   @media (max-width: 575px) {
+    #menu-mobile{
+      display: block;
+    }
+
     #menu{
       display: none;
       position: absolute;
