@@ -2,8 +2,8 @@
     <header class="bg-dark">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-sm-6 col-9"><router-link to="/"><span class="logo text-white">Logo</span></router-link></div>
-          <div class="col-lg-6 col-sm-6 col-3">
+          <div class="col-lg-6 col-md-5 col-sm-10 col-9"><router-link to="/"><span class="logo text-white">Logo</span></router-link></div>
+          <div class="col-lg-6 col-md-7 col-sm-2 col-3">
             <div @click="menuMobile" class="col-6 mt-3 pt-3" id="menu-mobile">
               <button><i class="fas fa-bars fa-3x"></i></button>
             </div>
@@ -63,7 +63,7 @@
     display: none;
   }
 
-  @media (max-width: 575px) {
+  @media (max-width: 767px) {
     #menu-mobile{
       display: block;
     }
